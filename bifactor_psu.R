@@ -30,7 +30,7 @@ m_one <- '
 '
 
 fit_one <- sem(m_one, data =dat)
-summary(fit_one, fit.measures = TRUE, standardized = TRUE)
+summary(fit_one, standardized = TRUE)
 
 
 # ---------------------------------------------------------------------
@@ -53,7 +53,7 @@ m_classic <- '
 '
 fit_classic <- sem(m_classic, data = dat)
 # -> Warning: some estimated ov variances are negative
-summary(fit_classic, fit.measures = TRUE, standardized = TRUE)
+summary(fit_classic, standardized = TRUE)
 
 
 # ---------------------------------------------------------------------
@@ -76,7 +76,7 @@ m_aug <- '
   js ~ G + S1 + S2 + S3
 '
 fit_aug <- sem(m_aug, data = dat)
-summary(fit_aug, fit.measures = TRUE, standardized = TRUE)
+summary(fit_aug, standardized = TRUE)
 
 
 # ---------------------------------------------------------------------
